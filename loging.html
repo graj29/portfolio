@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login Page</title>
+    <style>
+        body{
+            padding: 0;
+            margin:0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(rgb(1 99 123), rgb(237 240 244));
+        }
+        a i{
+            position: absolute;
+            top: 5vmin;
+            left: 5vmin;
+            font-size: 4vmin;
+            color: #070e25;
+        }
+        .logo{
+            top: 5vmin;
+            right: 88vmin;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+<div class="login-container">
+    <form class="login-form">
+        <div class="logo">
+            <img src="_b884aab2-dbb7-4906-a24d-b6ef402b6741.jpg" alt="Logo">
+        </div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <div class="password-container">
+            <input type="password" id="password" name="password" required>
+            <span class="eye-icon" onclick="togglePasswordVisibility()">
+                <i class="fa-regular fa-eye"></i>
+            </span>
+        </div>
+
+        <button type="submit">Sign In</button>
+    </form>
+
+    <div class="register-link">
+        <p>Don't have an account? <a href="registration.html">Register here</a></p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
+

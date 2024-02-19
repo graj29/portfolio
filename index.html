@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+     
+      .About-my-self {
+          padding: 1vmin 7vmin;
+          font-family: 'Protest Revolution', sans-serif;
+          animation: blur ease-in-out infinite alternate 3s;
+          backdrop-filter: blur(10px);
+          background: #ffffff7d;
+          border: 2vmin solid #ffffff38;
+          box-shadow: 0 0 5vmin black;
+        margin-top: 0vmin;
+      }
+      @keyframes blur {
+        from{
+         filter: blur(1px);
+        }
+        to{
+            filter:blur(0.2px);
+        }
+        
+      }
+      .welcome_section{
+        padding: 5vmin 0vmin;
+        width: 40%;
+      }
+      .welcome_section h1,h3{
+        font-size: 6vmin;
+        margin: 1vmin;
+        font-family: 'Protest Revolution', sans-serif;
+      }
+      .services{
+          width: 100%;
+          height: 150vh;
+          margin: 3vmin 0;
+          backdrop-filter: blur(10px);
+          background: #ffffff7d;
+          border: 2vmin solid #ffffff38;
+          box-shadow: 0 0 5vmin black;
+          border-radius: 1vmin;
+      }
+      .lowerbox{
+        display: flex;
+    }
+      .service_discription{
+        padding: 3vmin 12vmin;
+        line-height: 1.5em;
+      }
+     
+    .left_box h3{
+        font-size: 9vmin;
+        padding: 0 10vmin;
+    }
+      form {
+        background-color: #ffffff57;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgb(143 231 242);
+        width: 50%;
+        padding: 4vmin;
+        margin: 4vmin;
+        backdrop-filter: blur(14vmin);
+    }
+ 
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #010914;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 2px solid #061421;
+        border-radius: 1vmin;
+    }
+
+    input[type="submit"] {
+        background-color: #070e25;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color:#070e25;
+    }
+    .servicehead{
+        color: #000;
+        text-align: center;
+        padding: 1px;
+        background: #002a4b;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+    .secondbox{
+        padding: 0 22vmin;
+        background:url("photo-1552058456-adc0aabef0b4.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .service_explain h2{
+        margin-top: 5vmin;
+        color: #0a0000;
+        font-size: 5vmin;
+        text-decoration: underline;
+    }
+    .service_explain ul li{
+        margin-bottom: 8px;
+        list-style: circle;
+    }
+    .contact{
+        display: flex;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        padding: 10vmin;
+        backdrop-filter: blur(10px);
+        background: #ffffff7d;
+        border: 2vmin solid #ffffff38;
+        box-shadow: 0 0 5vmin black;
+        border-radius: 1vmin;
+    }
+   .contact_discription{
+    width: 50%;
+   }
+   .projectbox{
+    margin: 4vmin 0;
+   
+    border-radius: 1vmin;
+    backdrop-filter: blur(10px);
+    background: #ffffff7d;
+    border: 2vmin solid #ffffff38;
+    box-shadow: 0 0 5vmin black;
+   }
+   .projectbox header{
+    display: flex;
+    justify-content: center;
+   }
+   .projectsfolder{
+    height: 50vmin;
+   
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 175vh;
+   }
+   .projectsfile{
+ 
+
+    height: 40vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vmin;
+    flex-direction:column ;
+   }
+   .left_box img{
+    height: 39vmin;
+    margin: 6vmin;
+   }
+   .projecthead{
+    padding: 5vmin;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+   }
+   .projecthead header{
+    padding: 4vmin;
+    margin-top: -5vmin;
+    font-size: 4vmin;
+    font-family: monospace;
+   }
+   .filedis img{
+    height: 30vmin;
+    border: 2px solid black;
+    margin:3vmin;
+   }
+   .filedis img::before{
+   
+    content: "";
+    position: absolute;
+    min-width:7vmin;
+    min-height: 7vmin;
+    background-color: #a53d8e;
+    border-radius: 50%;
+   border:3px solid #af5d94;
+    box-shadow: inset 0px 0cqb 15px rgba(1, 12, 58, 0.877);
+   }
+   .filedis img:hover{
+     filter: blur(1px);
+     
+   }
+   .filedis{
+    display: flex;
+    width: 85%;
+  
+   }
+   .my_projects{
+    min-height: 100vh;
+   }
+   .site-footer{
+    background: #070e25;
+    padding: 5vmin;
+    margin-top: 3vmin;
+   }
+   .sidemenu{
+    width: 0vmin;
+    position: fixed;
+    width: 10vmin;
+
+    height: 35vmin;
+   }
+   .sidebox{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   }
+   .sidelist{
+    width: 100%;
+    display: felx;
+    display: flex;
+    justify-content: center;
+    padding: 1vmin;
+    border-radius: 0px 18px 18px 0px;
+    animation: slid 0.6s ease-in;
+   animation-fill-mode: forwards;
+   position: relative;
+   right: 40px;
+   
+   }
+   @keyframes slid {
+    0%{
+        position: relative;
+        right: 40px;
+    }
+    100%{
+        position: relative;
+        right: 0;
+    }
+   }
+.sidebox li:nth-child(1){
+    animation-delay: 0.2s;
+}
+.sidebox li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.sidebox li:nth-child(3){
+    animation-delay: 0.6s;
+}
+.sidebox li:nth-child(4){
+    animation-delay: 0.8s;
+}
+.sidelist i{
+    font-size: 5vmin;
+    text-shadow: -1px 3px 4px #16132e;
+    color: #bedfe9;
+}
+.sidelist i:hover{
+    font-size: 9vmin;
+}
+footer{
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.col-md-7{
+    width: 7vmin;
+}
+.col-md{
+    font-size: 5vmin;
+    color: rgb(6 77 105);
+    text-shadow: 2px 2px 1px #869cb6;
+}
+@media(max-width:360px){
+    .navbar{
+        padding:0 2vmin;
+    }
+  .logo img{
+    height: 17vmin;
+  }
+  .nav-list{
+    display: none;
+  }
+  .mainpro{
+    height: 77vh;
+  }
+  .mainprofile{
+    height: 65vmin;
+    mix-blend-mode:unset;
+    background-position: center;
+    margin-top: -3vmin;
+  }
+  .welcome-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -38vmin;
+    z-index: 2;
+    justify-content: center;
+    width: 100vw;
+    padding: 0;
+  }
+  .welcome-section h1,h2{
+    line-height: 0;
+    font-size: 7vmin;
+  }
+  .welcome-section p{
+    font-size: 12px;
+    margin-top: 19px;
+  }
+  .sidemenu{
+    bottom: 45vmin;
+    left: 45vmin;
+    z-index: 2;
+  }
+  .sidebox{
+    flex-direction: row;
+  }
+  .sidelist i{
+    font-size: 6vmin;
+  }
+  .secondbox{
+    font-size: 3vmin;
+    padding: 0 4vmin;
+  }
+  .services{
+    width: unset;
+    height: unset;
+  }
+  .lowerbox{
+    display: block;
+  }
+  .service_explain{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .service-ul{
+    padding: 0 24vmin;
+  }
+  .projectsfolder{
+    justify-content:unset;
+    height: unset;
+    min-height: unset;
+  }
+  .contact{
+    flex-direction: column;
+    padding: 4vmin;
+  }
+  .contact_discription{
+    width: -webkit-fill-available;
+  }
+  form{
+    width: -webkit-fill-available;
+  }
+
+}
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="mainnav">
+        <div class="logo">
+            <img src="_b884aab2-dbb7-4906-a24d-b6ef402b6741.jpg" alt="Logo">
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html" id="portfolio">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cv">CV</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="mainpro">
+    <div class="sidemenu">
+        <ul class="sidebox">
+            <li class="sidelist"><i class="fa-brands fa-facebook"></i></li>
+            <li class="sidelist"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="sidelist"><i class="fa-brands fa-square-instagram"></i></li>
+            <li class="sidelist"><i class="fa-brands fa-square-whatsapp"></i></li>
+        </ul>
+    </div>
+    <div class="mainprofile"></div>
+    <section class="welcome-section">
+        <h1>Hi, I am Gautam </h1>
+        <h2>a web developer</h2>
+        <div class="container">
+            <p class="typed"> coding is my passion and i love my passion.</p>
+          </div>
+    </section>
+</div>
+<div class="secondbox">
+    <section class="About-my-self">
+        <header class="welcome_section">
+            <h1>Welcome to Gautam's</h1>
+            <h3>Creative Haven</h3>
+        </header>
+        <p>Crafting digital dreams into functional realities, I am your web developer extraordinaire. Welcome to a world where code meets creativity, and user experiences come to life.</p>
+
+        <P> I am Gautam Raj, a web developer with a passion for creating website. With a background in Bachlor in compurter Application, I bring 2year of expertise in html,css,JavaScript. My commitment to provide a better qualities .
+            <h5>
+                Key Highlights:
+            </h5>
+            <p>I am from Hajipur</p>
+            <p>I love Playing games.</p>
+            <p>I am also a good artist</p>
+             </P>
+    
+    </section>
+    
+    <section class="services" id="services">
+         <header class="servicehead">
+                <h1>My Services</h1>
+         </header>
+          <div class="lowerbox">
+            <div class="left_box">  
+                <img src="frontend pnf.avif" alt="frontend"> 
+                <h3>Lets crush the world of development</h3>
+                <div class="service_discription">
+                    <p>Welcome to Gautam's page of services, where innovation meets excellence to transform your digital aspirations into reality. With a passion for cutting-edge technology and creative flair, I offer a range of services designed to elevate your online presence and meet your unique needs.</p>
+                </div>
+            </div>
+            <div class="service_explain">
+                <section>
+                    <h2>Front End Development</h2>
+                    <ul class="services.ul">
+                        <li>Responsive Website Design</li>
+                        <li>HTML5, CSS3, JavaScript</li>
+                     <li>Frameworks like Bootstrap</li>
+                        <li>Version Control (e.g., Git)</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h2>Design UI</h2>
+                    <ul class="services.ul">
+                        <li>UI/UX Design</li>
+                        <li>Wireframing and Prototyping</li>
+                        <li>Graphic Design (Adobe Creative Suite)</li>
+                        <li>Design Thinking</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h2>Data Entry</h2>
+                    <ul class="services.ul">
+                        <li>Accurate and Timely Data Entry</li>
+                        <li>Data Cleaning and Validation</li>
+                        <li>Database Management</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h2>Excel</h2>
+                    <ul class="services.ul">
+                        <li>Advanced Excel Functions</li>
+                        <li>Data Analysis and Visualization</li>
+                        <li>Creating Dashboards</li>
+                    </ul>
+                </section>
+            </div>
+          </div>
+    </section>
+    <section class="my_projects" >
+        <div class="projectbox">
+            <header>My Projects</header>
+            <div class="projecthead">
+                 <h3>Some of my work</h3>
+                 <p>You can see some of my project which i made by using my web development skills in last some months
+                    .If you want to make your projects like these than you can contact me. <h4>Thanks....</h4>
+                </p>
+            </div>
+            <ul class="projectsfolder">
+                <li class="projectsfile">
+                    <head class="filehead">my first project</head>
+                    <section class="filedis">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore hic autem!</p>
+                     <img src="download (1).jpg" alt="">
+                    </section>
+                </li>
+                <li class="projectsfile">
+                    <head class="filehead">my second project</head>
+                    <section class="filedis">
+                     <img src="download.jpg" alt="">
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reprehenderit placeat dolore.</p>
+                    </section>
+                </li>
+                <li class="projectsfile">
+                    <head class="filehead">my third project</head>
+                    <section class="filedis">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex enim omnis!</p>
+                     <img src="filealkdsf.jpg" alt="">
+                    </section>
+                </li>
+                <li class="projectsfile">
+                    <head class="filehead">my fourth project</head>
+                    <section class="filedis">
+                     <img src="rqwe.jpg" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur excepturi laborum beatae.</p>
+                    </section>
+                </li>
+             
+            </ul>
+        </div>                   
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact_discription">
+            <p>Embark on a journey through innovation and creativity! Let's shape your ideas into captivating digital experiences. Contact me, and together, we'll redefine the future of your projects.</p>
+        </div>
+        <form  method="post" action="" name="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Your-name" >
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Your-email" >
+
+            <label for="email">Phone no:</label>
+            <input type="number" id="phone" name="Your-phone no." >
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="Your-message" rows="4" ></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer class="site-footer">
+        <div >
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>You can contact me:</h4>
+                    <p>Email: graj30777@gamil.com</p>
+                    <p>Phone: +91 9117886838</p>
+                    <p>Address: Sri rampur,Lalgang road,Hajipur,Vaishali,Patna,Bihari 844102</p>
+                </div>
+                <ul class="col-md-7">
+                    <li class="col-md"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="col-md"><i class="fa-brands fa-linkedin"></i></li>
+                    <li class="col-md"><i class="fa-brands fa-square-instagram"></i></li>
+                    <li class="col-md"><i class="fa-brands fa-square-whatsapp"></i></li>
+                </ul>
+            </div>
+            <div class="last">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-center">Copyright &copy; 2024 Gautam Raj. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+</div>
+<script href="scripts.js">
+const scriptURL='https://script.google.com/macros/s/AKfycbwGsMgCyujhkreMljWEnn6PfekmC8J-kahhzDL4okvm0-wmuHWso1WAccheWFTqphHj/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e=>{
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST',body: new FormData(form)})
+    .then(response => alert("Thanks you! Your form is submitted successfully."))
+    .then(()=>{ window.location.reload();})
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
